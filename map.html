@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="map" style="width: 600px; height: 400px"></div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+	ymaps.ready(init);
+	var myMap,
+		myPlacemark;
+
+function init(){
+    var myGeocoder = ymaps.geocode("Санкт-петребруг,Обручевых д.1");
+
+    myGeocoder.then(
+        function (res) {
+            geo = res.geoObjects.get(0).geometry.getCoordinates();
+            console.log(geo);
+        },
+        function (err) {
+            alert('Ошибка');
+        }
+    );
+    myPlacemark = new ymaps.Placemark([60.009053,30.37787], {
+        hintContent: 'Политех Привет!',
+        balloonContent: 'Мой любимый универ'
+    });
+    myMap = new ymaps.Map("map", {
+    center: [60.009053, 30.37787],
+    zoom: 9
+});
+
+myMap.geoObjects.add(myPlacemark);
+}
+</script>
+
+</body>
+</html>
