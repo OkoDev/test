@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+<link rel="stylesheet" href="/app11.css">
+<script src="students.js"></script>
+<script src="elements.js"></script>
+<script src="planets.js"></script>
+
+	<title>Document</title>
+
+</head>
+
+<body>
+<div class="panels">
+<ul>
+	<li><a href="#app1">Билет №1</a></li>
+	<li><a href="#app2">Билет №2</a></li>
+	<li><a href="#app3">Билет №3</a></li>
+	<li><a href="#app4">Билет №4</a></li>
+	<li><a href="#app5">Билет №5</a></li>
+	<li><a href="#app6">Билет №6</a></li>
+	<li><a href="#app7">Билет №7</a></li>
+	<li><a href="#app8">Билет №8</a></li>
+	<li><a href="#app9">Билет №9</a></li>
+	<li><a href="#app10">Билет №10</a></li>
+	<li><a href="#app11">Билет №11</a></li>
+	<li><a href="#app12">Баян планет</a></li>
+</ul>
+
+	<div id="app1">
+
+	<div id="box">
+    Element: <input name="element">
+    <div class="summary"></div>
+</div>
+
+	
+	</div>
+	
+	
+	<div id="app2">
+<!--
+	<table border=1>
+    <thead>
+      <th>Планета</th>
+      <th>Диаметр</th>
+      <th>Минимальная температура</th>
+    </thead>
+    <tbody id = "info"> 
+
+    </tbody>
+  </table>
+-->
+        
+	<table border=1>
+	<tbody>
+            <tr >
+                <td>Килограмм</td>
+                <td>102 кг</td>
+            </tr>
+            <tr i>
+                <td>Печенге</td>
+                <td>111!!!!</td>
+            </tr>
+            <tr >
+                <td>Восход</td>
+                <td>3м01</td>
+            </tr>
+            <tr >
+                <td>Арнольд</td>
+                <td>1</td>
+            </tr>
+            <tr >
+                <td>62</td>
+                <td>Бордо</td>
+            </tr>
+            <tr i>
+                <td>Ульяновск</td>
+                <td>55</td>
+            </tr>
+		</tbody>
+		
+		</table>
+	</div>
+	
+	<div id="app3">
+	<!--
+вар1
+	<select id="select-town">
+    <option value="all">--- не выбрано ---</option>
+    <option value="1">Санкт-Петербурх</option>
+    <option value="2">Калининкраб</option>
+    <option value="3">Зысрань</option>
+</select>
+
+<table id="towns">
+    <thead>
+    <tr>
+        <td>Город</td>
+        <td>Адрес</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr data-group="1">
+        <td>Санкт-Петербурх</td>
+        <td>Иванов</td>
+    </tr>
+    <tr data-group="1">
+        <td>Санкт-Петербурх</td>
+        <td>Иванов</td>
+    </tr>
+    <tr data-group="1">
+        <td>Санкт-Петербурх</td>
+        <td>Иванов</td>
+    </tr>
+    <tr data-group="2">
+        <td>Калининкраб</td>
+        <td>Иванов</td>
+    </tr>
+    <tr data-group="2">
+        <td>Калининкраб</td>
+        <td>Иванов</td>
+    </tr>
+    <tr data-group="2">
+        <td>Калининкраб</td>
+        <td>Иванов</td>
+    </tr>
+    <tr data-group="2">
+        <td>Калининкраб</td>
+        <td>Иванов</td>
+    </tr>
+    <tr data-group="3">
+        <td>Зысрань</td>
+        <td>Иванов</td>
+    </tr>
+    <tr data-group="3">
+        <td>Зысрань</td>
+        <td>Иванов</td>
+    </tr>
+    </tbody>
+</table>
+-->
+
+<!--вар2-->
+
+ <button id="sam">Самара</button>
+    <button id="msk">Минск</button>
+    <button id="sar">Саратов</button>
+    <button id="ul">Ульяновск</button>
+    <button id="close">сброс</button>
+    <table class="city" border=1>
+        <thead>
+            <th>Название города</th>
+            <th>адрес</th>
+        </thead>
+        <tbody>
+            <tr id="citytab" class="samara">
+                <td>Самара</td>
+                <td>ул Вересковая, 1</td>
+            </tr>
+            <tr id="citytab" class="samara">
+                <td>Самара</td>
+                <td>ул Велосипедная, 1</td>
+            </tr>
+            <tr id="citytab" class="minsk">
+                <td>Минск</td>
+                <td>ул Воронянского, 1</td>
+            </tr>
+            <tr id="citytab" class="saratov">
+                <td>Саратов</td>
+                <td>ул Дибуновская, 1</td>
+            </tr>
+            <tr id="citytab" class="samara">
+                <td>Самара</td>
+                <td>ул Победы, 1</td>
+            </tr>
+            <tr id="citytab" class="ulyanovsk">
+                <td>Ульяновск</td>
+                <td>ул Пулковская, 65 1</td>
+            </tr>
+        </tbody>
+    </table>
+	
+	</div>
+	
+	<div id="app4">
+	
+		<div id="slider-range">
+			</div>
+  		<div id="slider-range">
+  		  	</div>
+   		<div class="container">
+    	<div id="students">
+    		<div class="row">
+        	 </div>
+      </div>
+  	 </div>
+   
+	</div>
+	
+	<div id="app5">
+	
+
+	</div>
+		
+	<div id="app6">
+	<style>
+#menu {
+  float: left;
+}
+
+#menu > li {
+  width: 200px;
+  float: left;
+}
+
+.ui-menu .ui-menu {
+  width: 300px;
+  float: none;
+}
+
+
+</style>
+		<div class="main">
+			<h1>Menu</h1>
+			<ul id="menu" >
+        <li><a href="#">Домой</a></li>
+        <li><a href="#">О нас</a>
+          <ul>
+            <li><a href="#">Наша история</a></li>
+            <li><a href="#">Как нас потерять</a></li>
+            <li><a href="#">Часы работы</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Наше всё</a>
+          <ul>
+            <li><a href="#">Плюшки</a>
+              <ul>
+                <li><a href="#">Простая штуковина</a></li>
+                <li><a href="#">Стандартная штуковина</a></li>
+                <li><a href="#">Продвинутая штуковина</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Прослушка</a>
+              <ul>
+                <li><a href="#">Простой гаджет</a></li>
+                <li><a href="#">Стандартный гаджет</a></li>
+                <li><a href="#">Продвинутый гаджет</a>
+                  <ul>
+                    <li><a href="#">Прикрутить майнер А</a></li>
+                    <li><a href="#">Прикрутить майнер Б</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Отсыпать другу</a></li>
+          </ul>
+        </li>
+      </ul>
+		</div>
+	</div>
+	
+		
+	<div id="app7">
+	
+	<div>
+    В корзине <span id="q">0</span> товаров на сумму <span id="s">0</span> руб.
+</div>
+<table>
+    <tr>
+        <td><img src="img/koleso.jpg" alt="" id="koleso">Колесо</td>
+        <td>259 руб.</td>
+        <td>
+            <button class="btn" data-price="259">В корзину</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Камера</td>
+        <td>111 руб.</td>
+        <td>
+            <button class="btn" data-price="111">В корзину</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Звонок</td>
+        <td>333 руб.</td>
+        <td>
+            <button class="btn" data-price="333">В корзину</button>
+        </td>
+    </tr>
+</table>
+	
+	</div>
+		
+	<div id="app8">
+	
+	</div>
+	
+	<div id="app9">
+	
+	<div id="height" style="height:500px;"></div>
+	<div id="width" style="width:500px; margin:15px 0 15px 6px; "></div>
+
+	<table border=1 style="text-align:center;">
+		<tr>
+			<td>H:</td>
+			<td style="width:  150px"><span class="height"></span> см</td>
+		</tr>
+		<tr>
+			<td>W:</td>
+			<td><span class="width"></span> см</td>
+		</tr>
+		<tr>
+			<td>Плиток 20x30:</td>
+			<td><span id="count"></span> шт.</td>
+		</tr>
+	</table>
+	
+	</div>
+	
+	<div id="app10">
+	
+	<div id="dialog-form" title="Добавить новый товар">
+  <p class="validateTips">Поля, обязательные для заполнения.</p>
+ 
+  <form>
+    <fieldset>
+      <label for="name">Наименование</label>
+      <input type="text" name="name" id="name" value="Поршень" class="text ui-widget-content ui-corner-all"><br>
+      <label for="price">цена продукта</label>
+      <input type="number" name="price" id="price" value="7000" class="text ui-widget-content ui-corner-all"><br>
+ 
+    </fieldset>
+  </form>
+</div>
+ 
+ 
+<div id="products-contain" class="ui-widget">
+  <h1>Добавить товар:</h1>
+  <table id="products" class="ui-widget ui-widget-content" border="1">
+    <thead>
+      <tr class="ui-widget-header ">
+        <th>Номер</th>
+        <th>Наименование</th>
+        <th>Цена</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>1</td>
+        <td>Клапан</td>
+        <td>5000</td>
+        
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+<br>
+
+<button id="create-product">Добавить</button>
+</div>
+
+	<div id="app11">
+	
+	<div class="ui-widget-content" style="border:0;">
+
+    <p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+        <span class="ui-icon ui-icon-pencil" style="float:left; margin:-2px 5px 0 0;"></span> Simple Colorpicker
+    </p>
+
+    <div id="red"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+
+    <div id="swatch" class="ui-widget-content ui-corner-all" ></div>
+
+</div>
+
+	</div>
+	
+	<div id="app12">
+	
+	<button>Открыть Землю</button>
+    <div id="planetList">
+        <h3>Mercury</h3>
+        <div>
+            <p> "diameter (Earth=1)": 0.382, "diameter (km)": 4878, "mass (Earth=1)": 0.055, "mean distance from Sun (AU)": 0.39, "orbital period (Earth years)": 0.24, "orbital eccentricity": 0.2056, "mean orbital velocity (km/sec)": 47.89, "rotation period (in Earth days)": 58.65, "inclination of axis (degrees)": 0.0, "mean temperature at surface (C)": {"from": -180, "to": 430}, "gravity at equator (Earth=1)": 0.38, "escape velocity (km/sec)": 4.25, "mean density (water=1)": 5.43, "atmospheric composition": "none", "number of moons": 0, "rings?": false</p>
+        </div>
+    </div>
+	
+	</div>
+	
+</div>
+	
+	<script src="app1.js"></script>
+	
+</body>
+
+</html>
